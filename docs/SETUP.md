@@ -30,6 +30,8 @@ Add
 e.g. with our above example:
     $(SRCROOT)/Libraries/Knobs/iOS/Include/
 
+Finally, add CFNetworking.framework in your project's Link Binaries With Libraries section.
+
 ### Enabling In Your App
 Now you're ready to actually activate knobs in your app. We recommend you only enable it in DEBUG builds because it opens a pipe to your app that can do all sorts of things. Add the following to somewhere early in your app like -[YourAppDelegate application:didFinishLaunchingWithOptions:]
 
